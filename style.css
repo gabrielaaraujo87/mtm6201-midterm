@@ -1,8 +1,34 @@
+/* Mobile-first styles (applied to all screen sizes by default) */
+
+/* Tablet and larger screen styles */
+@media (min-width: 768px) {
+}
+
+/* Desktop and larger screen styles */
+@media (min-width: 1024px) {
+}
+
 /* Reset default browser styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
   }
+
+    /* Animation Styles */
+/* Noticeable animation using the animation property */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to elements as needed */
+main {
+  animation: fadeIn 1s ease;
+}
   
   /* Global styles */
   body {
@@ -13,7 +39,7 @@ body, h1, h2, p, ul, li {
     padding: 20px;
   }
 
-  /* Header styles */  
+/* Header styles */  
   header {
     background-color: plum;
     color: black;
@@ -24,6 +50,7 @@ body, h1, h2, p, ul, li {
     margin: 0;
   }
   
+/* NAV styles */ 
   nav ul {
     list-style: none;
   }
@@ -42,18 +69,63 @@ body, h1, h2, p, ul, li {
     background-color: #fff;
     color: #333;
   }
-  
+
+/* NAV styles */ 
+  #list {
+    padding-right: 1rem;
+}
+/* Main styles */   
   main {
     margin-top: 20px;
   }
 
+/* Images styles */   
   .img1 {
+    width: 15rem;
+    float: left;
+    padding-right: 1rem;
+  }
+
+  #img2 {
     width: 20rem;
   }
+
+  #img3 {
+    width: 21rem;
+  }
   
+  #img4 {
+    width: 20rem;
+  }
+
+/* DIVs styles */ 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
+}
+
+.mw1, .mw2, .mw3, .mw4 {
+  width: 100%;
+  height: 35rem;
+  padding: 10px;
+}
+
+fieldset {
+  width: 5rem;
+  float: left;
+}
+
+/* Float the iframe to the right */
+iframe {
+  float: right;
+}
+
+/* Footer styles */ 
   footer {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     font-size: 0.8em;
-    color: #888;
+    color: purple;
   }

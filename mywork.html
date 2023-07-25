@@ -1,35 +1,59 @@
 <!DOCTYPE html>
+<!-- This website template was created by: Araujo, Gabriela 90541093105 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 1</title>
+  <title>My work page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1>My work</h1>
-    <nav>
+  <header role="banner">
+    <h1>Welcome to Me</h1>
+    <nav role="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="mywork.html">My work</a></li>
-        <li><a href="contactme.html">Contact me</a></li>
+        <li><a href="index.html" role="menuitem">Home</a></li>
+        <li><a href="mywork.html" role="menuitem">My work</a></li>
+        <li><a href="contactme.html" role="menuitem">Contact me</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section>
-      <h2>Page 1 Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed ipsum risus. Proin quis urna sed nisl sollicitudin fermentum non non odio. Pellentesque rutrum justo vitae congue lacinia. Fusce tincidunt ligula eget arcu blandit feugiat. Curabitur id est augue.</p>
-    </section>
+      <br>
+      <p>Here you can see a bit of what I have done so far in school and in life</p>
+      <br>
+    <div class="grid-container">
+      <div class="mw1" role="figure">
+        <img id="img2" src="C:\Gabriela\Term2\mtm6201-midterm\Images\DSC_2451-2.jpg" alt="CreativePortrait">
+        <br>
+        <p>Creative Portrait, class work - 2023 - Nikon D7000</p>
+      </div>
+      <div class="mw2" role="figure">
+        <img id="img3" src="C:\Gabriela\Term2\mtm6201-midterm\Images\Bali, wildlife.portrait - 2015 - Iphone6s.JPG" alt="BaliWildlife">
+        <br>
+        <p>Bali, Wildlife - 2015 - Iphone6s</p>
+      </div>
+      <div class="mw3" role="figure">
+        <img id="img4" src="C:\Gabriela\Term2\mtm6201-midterm\Images\DSC_2464-2.jpg" alt="Portrait">
+        <br>
+        <p>Portrait, class work - 2023 - Nikon D7000</p>
+      </div>
+      <div class="mw4" role="figure">
+        <a href="C:\Gabriela\Term2\mtm6201-midterm\Images\Araujo, Gabriela - MTM6160-Digital Graphics Adjustment Layer Assignment 1 FINAL.pdf" type="AdjustmentLayerAssignment/pdf">
+        <p>Adjustment Layer Assignment</p>
+        <a href="C:\Gabriela\Term2\mtm6201-midterm\Images\Araujo, Gabriela - MTM6160-Digital Graphics Clean me up Assignment 2023.02.21 FINAL.pdf" type="CleanMeUpAssignment/pdf">
+        <p>Clean Me Up Assignment</p>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer  role="contentinfo">
     <p>&copy; 2023 Gabriela Araujo. All rights reserved.</p>
+    <a href="index.html" role="menuitem">Home</a>
   </footer>
 </body>
 </html>

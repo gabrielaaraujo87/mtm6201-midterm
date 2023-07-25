@@ -1,35 +1,64 @@
 <!DOCTYPE html>
+<!-- This website template was created by: Araujo, Gabriela 90541093105 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 2</title>
+  <title>Contact page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1>Contact me</h1>
-    <nav>
+  <header role="banner">
+    <h1>Welcome to Me</h1>
+    <nav role="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="mywork.html">My work</a></li>
-        <li><a href="contactme.html">Contact me</a></li>
+        <li><a href="index.html" role="menuitem">Home</a></li>
+        <li><a href="mywork.html" role="menuitem">My work</a></li>
+        <li><a href="contactme.html" role="menuitem">Contact me</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main>
-    <section>
-      <h2>Page 2 Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed ipsum risus. Proin quis urna sed nisl sollicitudin fermentum non non odio. Pellentesque rutrum justo vitae congue lacinia. Fusce tincidunt ligula eget arcu blandit feugiat. Curabitur id est augue.</p>
-    </section>
+  <main role="main">
+      <form>
+      <fieldset>
+        <br>
+        <label id="name">Your Name</label>
+        <br>
+        <input type="text" name="Text" size="50" style="font-size: 14px;">
+        <br>
+        <br>
+        <label id="email">Your Email</label>
+        <br>
+        <input type="text" name="Text" size="50" style="font-size: 14px;">
+        <br>
+        <br>
+        <label id="message">Your message</label>
+        <br>
+        <textarea name="name" rows="4" cols="50" style="font-size: 14px;"></textarea>
+        <br>
+        <br>
+        <label id="contact">Is the WebSite intersting to you?</label>
+        <br>
+        <br>
+        <input type="radio" name="radio-answer" value="yes" aria-labelledby="contact">Yes
+        <input type="radio" name="radio-answer" value="no" aria-labelledby="contact">No
+        <input type="radio" name="radio-answer" value="maybe" aria-labelledby="contact">maybe
+        <br>
+        <br>
+        <button type="submit" style="font-size: 14px;">Send</button>
+        </fieldset>
+        </form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46102.19111289651!2d-79.412802!3d43.764826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b47257e142195%3A0x998c398862d57488!2sCDI%20College%20-%20North%20York!5e0!3m2!1sen!2sus!4v1690316798601!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer  role="contentinfo">
     <p>&copy; 2023 Gabriela Araujo. All rights reserved.</p>
+    <a href="index.html" role="menuitem">Home</a>
   </footer>
 </body>
 </html>
